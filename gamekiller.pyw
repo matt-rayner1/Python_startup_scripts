@@ -29,10 +29,11 @@ def Terminate_procs():
         if "upc.exe" in (proc.info['name']).lower():
             proc.terminate()
 
-#main loop
+#main loop.
 while(1==1):
     timestamp = Time_in_sec()
     
+    #61200 = 5pm
     if timestamp <= 61200:
         Terminate_procs()
     else:
